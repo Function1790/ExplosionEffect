@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+canvas {
+    background-color: white;
+    border: 3px solid black;
+    cursor: pointer;
+}
