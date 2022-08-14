@@ -1,2 +1,2 @@
-# ExplosionEffect
-with JS
+# ExplosionEffect With Javascript
+Click the canvas!
