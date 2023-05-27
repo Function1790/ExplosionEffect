@@ -137,19 +137,12 @@ const CENTER = new Vector(canvas.width / 2, canvas.height / 2)
 const PARTICLE_COUNT = 50
 
 const Palette = [
-    new RGB(32, 118, 187),
-    new RGB(183, 111, 176),
-    new RGB(244, 122, 158),
-    new RGB(255, 152, 128),
-    new RGB(255, 97, 55),
-    new RGB(255, 198, 104),
-    new RGB(249, 248, 113),
+    new RGB(0, 196, 255), //파
+    new RGB(252, 255, 178),
+    new RGB(255, 152, 128), //duswb
+    new RGB(255, 97, 55), //주
+    new RGB(249, 248, 113), //노2
 ]
-
-Palette.forEach(i => {
-    document.write(`<div width="100" height="100" 
-    style="background:${i.toString()}">.</div>`)
-})
 
 const RenderList = []
 //Variable
@@ -223,3 +216,13 @@ function clickCanvas(event) {
 
 //Add Listener
 canvas.addEventListener("click", clickCanvas)
+
+window.addEventListener(`resize`, function () {
+    $('#canvas').attr('width', this.innerWidth)
+    $('#canvas').attr('height', this.innerHeight)
+});
+
+window.addEventListener('load', () => {
+    $('#canvas').attr('width', this.innerWidth)
+    $('#canvas').attr('height', this.innerHeight)
+})
