@@ -1,9 +1,21 @@
-body {
-    background-color: rgb(230, 230, 230);
+* {
+    margin: 0;
+    padding: 0;
 }
 
+.box {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
+}
+
+
 canvas {
-    background-color: white;
-    border: 3px solid black;
     cursor: pointer;
 }
